@@ -13,3 +13,5 @@ docker build --build-arg CXX_STANDARD=$CXX_STANDARD --build-arg ROOT_VERSION=$RO
 
 docker push lobis/root-geant4-garfieldpp-clion:cxx${CXX_STANDARD}_ROOT${ROOT_VERSION}_Geant4${GEANT4_VERSION}
 ```
+
+The image will be pushed to [https://hub.docker.com/r/lobis/root-geant4-garfieldpp-clion](https://hub.docker.com/r/lobis/root-geant4-garfieldpp-clion).
