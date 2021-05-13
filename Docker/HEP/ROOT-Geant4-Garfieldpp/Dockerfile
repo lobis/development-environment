@@ -1,4 +1,3 @@
-  
 FROM ubuntu:latest
 
 LABEL maintainer.name="Luis Obis"
