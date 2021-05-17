@@ -7,8 +7,13 @@ ENV APPS_DIR=/opt
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
-    apt-get install -y build-essential git wget curl apt-utils software-properties-common dpkg-dev cmake binutils openssl libssl-dev libtbb-dev \
-    libexpat-dev libxerces-c-dev libmpc-dev gfortran qt5-default libxmu-dev libxpm-dev libxft-dev libxext-dev python3-dev python3-numpy libspdlog-dev && \
+    apt-get install -y \
+    apt-utils binutils build-essential ca-certificates cmake curl davix-dev dcap-dev dpkg-dev fonts-freefont-ttf g++ gcc gfortran \
+    git libafterimage-dev libcfitsio-dev libexpat-dev libfcgi-dev libfftw3-dev libfreetype6-dev libftgl-dev libgfal2-dev libgif-dev \
+    libgl2ps-dev libglew-dev libglu-dev libgraphviz-dev libgsl-dev libjpeg-dev liblz4-dev liblzma-dev libmpc-dev libmysqlclient-dev  \
+    libpcre++-dev libpng-dev libpq-dev libpythia8-dev libspdlog-dev libsqlite3-dev libssl-dev libtbb-dev libtiff-dev libx11-dev \
+    libxerces-c-dev libxext-dev libxft-dev libxml2-dev libxmu-dev libxpm-dev libxxhash-dev libz-dev libzstd-dev locales make openssl \
+    python3-dev python3-numpy qt5-default software-properties-common srm-ifce-dev unixodbc-dev wget && \
     apt-get autoremove -y && \
     apt-get clean -y && \
     rm -rf /var/cache/apt/archives/* && \
