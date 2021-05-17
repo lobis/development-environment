@@ -7,8 +7,8 @@ ENV APPS_DIR=/opt
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
-    apt-get install -y build-essential git wget curl apt-utils software-properties-common dpkg-dev cmake binutils openssl libssl-dev \
-    libexpat-dev libxerces-c-dev libmpc-dev gfortran qt5-default libxmu-dev libxpm-dev libxft-dev libxext-dev python3-dev libtbb-dev libspdlog-dev && \
+    apt-get install -y build-essential git wget curl apt-utils software-properties-common dpkg-dev cmake binutils openssl libssl-dev libtbb-dev \
+    libexpat-dev libxerces-c-dev libmpc-dev gfortran qt5-default libxmu-dev libxpm-dev libxft-dev libxext-dev python3-dev python3-numpy libspdlog-dev && \
     apt-get autoremove -y && \
     apt-get clean -y && \
     rm -rf /var/cache/apt/archives/* && \
