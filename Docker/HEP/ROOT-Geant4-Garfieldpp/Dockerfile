@@ -13,7 +13,7 @@ RUN apt-get update && \
     libgl2ps-dev libglew-dev libglu-dev libgraphviz-dev libgsl-dev libjpeg-dev liblz4-dev liblzma-dev libmpc-dev libmysqlclient-dev  \
     libpcre++-dev libpng-dev libpq-dev libpythia8-dev libspdlog-dev libsqlite3-dev libssl-dev libtbb-dev libtiff-dev libx11-dev \
     libxerces-c-dev libxext-dev libxft-dev libxml2-dev libxmu-dev libxpm-dev libxxhash-dev libz-dev libzstd-dev locales make openssl \
-    python3-dev python3-numpy qt5-default software-properties-common srm-ifce-dev unixodbc-dev wget && \
+    python3-dev python3-numpy qt5-default software-properties-common srm-ifce-dev unixodbc-dev wget \
     libpq-dev postgresql-server-dev-all && \
     apt-get autoremove -y && \
     apt-get clean -y && \
