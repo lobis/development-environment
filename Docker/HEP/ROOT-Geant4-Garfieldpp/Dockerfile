@@ -14,7 +14,7 @@ RUN apt-get update && \
     libpcre++-dev libpng-dev libpq-dev libpythia8-dev libspdlog-dev libsqlite3-dev libssl-dev libtbb-dev libtiff-dev libx11-dev \
     libxerces-c-dev libxext-dev libxft-dev libxml2-dev libxmu-dev libxpm-dev libxxhash-dev libz-dev libzstd-dev locales make openssl \
     python3-dev python3-numpy qt5-default software-properties-common srm-ifce-dev unixodbc-dev wget \
-    libpq-dev postgresql-server-dev-all && \
+    libpq-dev postgresql-server-dev-all libboost-all-dev && \
     apt-get autoremove -y && \
     apt-get clean -y && \
     rm -rf /var/cache/apt/archives/* && \
