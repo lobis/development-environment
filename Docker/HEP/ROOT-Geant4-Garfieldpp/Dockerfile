@@ -58,7 +58,7 @@ RUN git clone https://github.com/Geant4/geant4.git --branch=${GEANT4_VERSION} --
 ENV PATH $GEANT4_DIR/install/bin:$PATH
 
 # GARFIELDPP
-ARG GARFIELDPP_VERSION=3.0
+ARG GARFIELDPP_VERSION=4.0
 ENV GARFIELDPP_DIR=$APPS_DIR/garfieldpp
 
 RUN git clone https://gitlab.cern.ch/garfield/garfieldpp.git --branch=${GARFIELDPP_VERSION} --depth 1 $GARFIELDPP_DIR/source && \
