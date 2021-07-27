@@ -67,7 +67,7 @@ RUN git clone https://gitlab.cern.ch/garfield/garfieldpp.git --branch=${GARFIELD
     -DWITH_EXAMPLES=OFF -DCMAKE_CXX_STANDARD=$CXX_STANDARD && \
     make -j$(nproc) install && \
     rm -rf $GARFIELDPP_DIR/build $GARFIELDPP_DIR/source && \
-    echo "export GARFIELD_HOME=$GARFIELDPP_DIR/install" >> ~/.bashrc
+    echo "source $GARFIELDPP_DIR/install/share/Garfield/setupGarfield.sh" >> ~/.bashrc
 
 WORKDIR /
 
